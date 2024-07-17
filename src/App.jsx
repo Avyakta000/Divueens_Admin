@@ -10,8 +10,9 @@ import AdminProfile from './components/admin/AdminProfile'
 import ProtectedRoute from './components/ProtectedRoute'
 import { PanelContext } from './context/PanelContext'
 import NotAuthorizedPage from './components/NotAuthorizedPage'
-import Categories from './components/Category/categories'
 import NotFound from './components/NotFound'
+import Category from './components/Category/Category'
+
 
 
 function App() {
@@ -60,7 +61,7 @@ function App() {
 
          {/* pending work*/}
         <Route exact path="/banner" element={<ProtectedRoute> <Banner /> </ProtectedRoute>} />
-        <Route exact path="/categories" element={<ProtectedRoute> <Categories/> </ProtectedRoute> }/>
+        <Route exact path="/categories" element={<ProtectedRoute> <Category/> </ProtectedRoute> }/>
 
         {/* chatching routes which are not defined */}
         <Route path="*" element={<NotFound />} />
