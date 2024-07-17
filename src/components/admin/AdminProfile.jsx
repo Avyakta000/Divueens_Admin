@@ -74,7 +74,7 @@ const AdminProfile = () => {
     return (
         <Layout>
 
-            <div className="justify-center items-start min-h-screen bg-gray-100 py-8 ml-[3rem] mr-[3rem]">
+            <div className="justify-center items-start min-h-screen bg-gray-50 py-8 ml-[3rem] mr-[3rem]">
                 {/* Left Side - Profile Information */}
                 <div className="flex row justify-around items-center ">
                     {/* Left Side - Circular Profile Image */}
